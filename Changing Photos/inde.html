@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Photos</title>   
+</head>
+<body>
+    <style>
+        .custom-button {
+            background-color: #080ec7;
+            border-radius:15px;           
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size:20px;
+            margin:4px 2px;            
+        }
+    </style>    
+    <img id="demo" src="https://picsum.photos/id/150/600/400" alt="">
+    <button onclick="changeImg()" class="custom-button">Changing Photos</button>    
+    <script>
+        let imageUrls = [
+            "https://picsum.photos/id/11/600/400",
+            "https://picsum.photos/id/20/600/400",
+            "https://picsum.photos/id/33/600/400",
+            "https://picsum.photos/id/45/600/400",
+            "https://picsum.photos/id/59/600/400",
+            "https://picsum.photos/id/60/600/400"
+        ];
+        let currentImageIndex = 0;
+    
+        function changeImg() {
+            document.getElementById('demo').src = imageUrls[currentImageIndex];
+            currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+        }
+    </script>
+</body>
+</html>

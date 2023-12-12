@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aappenchild</title>
+</head>
+<body>
+    <!--1. <h1>The Element Object</h1>
+    <h2>The appendChild() Method</h2>
+    
+    <ul id="myList">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+    
+    <p>Click "Append" to append an item to the end of the list:</p>
+    
+    <button onclick="myFunction()">Append</button>
+    
+    <script>
+    function myFunction() {
+    
+    // Create an "li" node:
+    const node = document.createElement("li");
+    
+    // Create a text node:
+    const textnode = document.createTextNode("Water");
+    
+    // Append the text node to the "li" node:
+    node.appendChild(textnode);
+    
+    // Append the "li" node to the list:
+    document.getElementById("myList").appendChild(node);
+    }
+    </script>-->
+
+    <!--2. <h1>The Element Object</h1>
+    <h2>The appendChild() Method</h2>
+    
+    <ul id="myList1">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+    <ul id="myList2">
+      <li>Water</li>
+      <li>Milk</li>
+    </ul>
+    
+    <p>Click "Move" to move an item from one list to another:</p>
+    
+    <button onclick="myFunction()">Move</button>
+    
+    <script>
+    function myFunction() {
+      const node = document.getElementById("myList2").lastElementChild;
+      document.getElementById("myList1").appendChild(node);
+    }
+    </script>-->
+
+    <!--3. <h1>The Element Object</h1>
+    <h2>The appendChild() Method</h2>
+
+    <p>Click "Append" create a paragraph and append it to myDIV:</p>
+
+    <button onclick="myFunction()">Append</button>
+
+    <div id="myDIV">
+    <h2>I am myDIV</h2>
+    </div>
+
+    <script>
+    function myFunction() {
+
+    // Create a p element:
+    const para = document.createElement("p");
+
+    // Create a text node:
+    const node = document.createTextNode("This is a paragraph.");
+
+    // Append text node to the p element:
+    para.appendChild(node);
+
+    // Append the p element to the body:
+    document.getElementById("myDIV").appendChild(para);
+    }
+    </script>-->
+
+    <!--4. <h1>The Document Object</h1>
+    <h2>The body Property</h2>
+
+    <p>Click "Append" to create a p element and append it to the document's body:</p>
+
+    <button onclick="myFunction()">Append</button>
+
+    <script>
+    function myFunction() {
+    const para = document.createElement("p");
+    const node = document.createTextNode("This is a paragraph.");
+
+    para.appendChild(node);
+    document.body.appendChild(para);
+    }
+    </script> -->
+</body>
+</html>
